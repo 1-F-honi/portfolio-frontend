@@ -1,47 +1,20 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <CContainer fluid class="p-0">
+    <HeroSection />
+    <ProjectsSection />
+    <SkillsSection />
+    <FooterSection />
+  </CContainer>
 </template>
 
+<script setup>
+import { CContainer } from '@coreui/vue'
+import HeroSection from './components/Base/HeroSection.vue'
+import ProjectsSection from './components/Base/ProjectsSection.vue'
+import SkillsSection from './components/Base/SkillsSection.vue'
+import FooterSection from './components/Base/FooterSection.vue'
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+/* 必要に応じてスタイル調整 */
 </style>

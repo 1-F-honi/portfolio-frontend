@@ -12,6 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/coreui": "^5.4.1",
+    "@coreui/vue": "^5.5.0",
     "vue": "^3.5.18"
   },
   "devDependencies": {
