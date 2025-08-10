@@ -1,18 +1,12 @@
 <template>
   <CContainer fluid class="p-0">
-    <HeroSection />
-    <ProjectsSection />
-    <SkillsSection />
-    <FooterSection />
+    <RouterView />
   </CContainer>
 </template>
 
 <script setup>
 import { CContainer } from '@coreui/vue'
-import HeroSection from './components/Base/HeroSection.vue'
-import ProjectsSection from './components/Base/ProjectsSection.vue'
-import SkillsSection from './components/Base/SkillsSection.vue'
-import FooterSection from './components/Base/FooterSection.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <style scoped>

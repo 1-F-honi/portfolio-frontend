@@ -16,10 +16,9 @@
 </template>
 
 <script setup>
-import { CBadge } from '@coreui/vue'
 
 const skills = [
-  'Python', 'JavaScript', 'Vue.js', 'Hugging Face', 'Docker', 'AWS'
+  'Python', 'JavaScript', 'Vue.js', 'Hugging Face'
 ]
 </script>
 
