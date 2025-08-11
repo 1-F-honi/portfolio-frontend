@@ -27,17 +27,16 @@ jobs:
           node-version: 20
           cache: "npm"
 
-      # devDependencies を確実に入れる（NODE_ENV=production を無効化）
-      - name: Install dependencies (include dev)
-        run: |
-          echo "NODE_ENV is: ${NODE_ENV:-<empty>}"
-          npm ci --production=false || npm install --no-audit --no-fund
-          npm ls unplugin-vue-macros || true
-          npm ls @vitejs/plugin-vue || true
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Install dependencies vite
+        run: npm i -D unplugin-vue-macros @vitejs/plugin-vue
 
       - name: Build
         run: npm run build
 
+      # SPA 直叩き対策: index.html を 404.html にコピー
       - name: Create 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
