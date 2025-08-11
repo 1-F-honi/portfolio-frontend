@@ -5,7 +5,7 @@ import ProjectDetail from './components/Base/ProjectDetail.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/portfolio-frontend/',
     name: 'Home',
     component: HomePage
   },

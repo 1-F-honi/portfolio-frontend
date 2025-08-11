@@ -12,7 +12,7 @@
     <div v-else>
       <p>プロジェクトが見つかりませんでした。</p>
     </div>
-    <RouterLink to="/">← 戻る</RouterLink>
+    <RouterLink to="/portfolio-frontend/">← 戻る</RouterLink>
   </div>
 </template>
 
