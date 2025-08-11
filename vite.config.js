@@ -8,6 +8,7 @@ import VueMacros from 'unplugin-vue-macros/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/portfolio-frontend/',
   plugins: [
     vue(),
     vueDevTools(),
