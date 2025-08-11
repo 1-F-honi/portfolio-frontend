@@ -27,7 +27,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://rz77dt1i64.execute-api.ap-northeast-1.amazonaws.com/Prod',
         changeOrigin: true,
       }
     }
