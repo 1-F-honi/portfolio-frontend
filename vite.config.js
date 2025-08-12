@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => {
   // ルートの .env / .env.development 等を読み込む
   const env = loadEnv(mode, process.cwd(), '')
   const API_URL = env.VITE_API_URL
-
   return {
+    base: '/portfolio-frontend/',
     plugins: [
       vue(),
       vueDevTools(),
