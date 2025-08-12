@@ -34,7 +34,7 @@ jobs:
         run: npm i -D unplugin-vue-macros @vitejs/plugin-vue
 
       - name: Build
-        run: npm run build
+        run: npm run prod build
 
       # SPA 直叩き対策: index.html を 404.html にコピー
       - name: Create 404.html for SPA routing
