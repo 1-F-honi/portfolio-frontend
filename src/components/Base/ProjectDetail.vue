@@ -68,7 +68,7 @@ async function sendBotReply(userText) {
 
   try {
     errorMsg.value = ''
-    const res = await fetch(`${API_BASE}/chat`, {
+    const res = await fetch(`${API_BASE}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: userText }),
